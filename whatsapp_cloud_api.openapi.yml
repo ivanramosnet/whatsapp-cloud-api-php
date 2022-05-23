@@ -1136,7 +1136,8 @@ paths:
             type: string
           required: true
       responses:
-        undefined:
+        '200':
+          description: OK
           headers:
             Content-Type:
               schema:
@@ -1633,7 +1634,8 @@ paths:
             type: string
           required: true
       responses:
-        undefined:
+        '200':
+          description: OK
           headers:
             Content-Type:
               schema:
@@ -1980,7 +1982,8 @@ paths:
             type: string
           required: true
       responses:
-        undefined:
+        '200':
+          description: OK
           headers:
             Content-Type:
               schema:
@@ -2044,7 +2047,8 @@ paths:
             type: string
           required: true
       responses:
-        undefined:
+        '200':
+          description: OK
           headers:
             Content-Type:
               schema:
@@ -2148,7 +2152,11 @@ paths:
       summary: Create a Subscription to WABA
       description: Subscribe an app to a WhatsApp Business Account.
       requestBody:
-        content: {}
+        content:
+          application/json:
+            schema:
+              type: object
+              example: ''
       parameters:
         - name: Version
           in: path
