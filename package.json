@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "devDependencies": {
+    "postman-to-openapi": "^2.2.1"
+  }
+}
